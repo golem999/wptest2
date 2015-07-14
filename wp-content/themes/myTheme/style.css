@@ -1,0 +1,112 @@
+/*
+Theme name: my marketplace theme
+Author: ZVS
+Version: 1.0
+*/
+
+
+/*
+*   dialog stylesheet
+*/
+.modal-content .modal-header{
+    border-bottom: none;
+    text-align: center;
+    padding: 23px;
+}
+
+div.modal-header h4 {
+    font-size: 150%;
+}
+.body img {
+    padding-bottom: 10px;
+}
+.body p {
+    padding: 10px;
+}
+
+
+/*
+* spinner
+*/
+button i.fa-spin {
+    font-size: 25px;
+}
+
+
+/*
+* cart template
+*/
+.cart_item{
+    margin: auto    ;
+    height: 102px;
+    margin-top: 20px;
+}
+
+.img {
+    margin: auto;
+}
+
+.item_content h5 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.item_content p{
+    height: 60px;
+    overflow: hidden;
+}
+.item_price
+{
+    font-size: 25px;
+    line-height: 102px;
+    color: #cc0000;
+}
+.item_close i {
+    font-size: 30px;
+    line-height: 102px;
+}
+
+.cart_summ {
+    padding: 50px;
+    width: 100%;
+    margin: auto;
+    position:     fixed;
+    bottom: 10px;
+} 
+
+.cart_summ button {
+    margin: auto;
+}
+.cart_summ button i{
+    text-align: left;
+}
+.cart_summ button i{
+    margin-right: 10px;
+}
+.cart_summ button > i.fa-spin{
+    padding-right: -30px;
+}
+
+
+/*
+* payment modal
+*/
+
+.modal-header.border{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.submit{
+    width: 100%;
+    height: 150px;
+    border: none;
+    background: url("http://localhost/wp-content/plugins/myTests/includes/templates//img/wmlogo_vector_blue.png") no-repeat center;
+    content: normal;
+}
+
+
+
+
+
+

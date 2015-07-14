@@ -1,0 +1,28 @@
+.price {
+	font-weight: 800;
+	font-size: 24px;
+	color: #E50207;
+	width: 100%;	
+
+}
+
+.item_footer {
+	width: 100%;
+	padding: 10px;
+}
+
+.item p {
+	margin: 0;
+	height: 65px;
+	overflow: hidden;
+}
+
+
+hr.examplefour {
+border: 0;
+height: 1px;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
