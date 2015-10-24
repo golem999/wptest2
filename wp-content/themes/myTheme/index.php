@@ -2,9 +2,14 @@
 		<?php get_header(); ?>
 
 
-            <?php  ?>
+            <?php
+            ?>
 
 		<div class="container">
+
+
+
+
 			<div role="tabpanel">
 				<!-- Nav tabs -->		
 				<ul class="nav nav-tabs" role="tablist">

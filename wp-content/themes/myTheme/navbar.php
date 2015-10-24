@@ -28,6 +28,15 @@
             ?>
 
 			</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <?php   if ( is_user_logged_in() ) {   ?>
+                    <li><a id="user" href="#"><span class="disabled glyphicon glyphicon-user"></span>  <?php echo get_username(); ?></a></li>
+                    <li><a href="<?php echo wp_logout_url( 'http://localhost/index.php' ); ?>"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                <?php   }  else {  ?>
+                    <li><a id="login_button" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <?php } ?>
+            </ul>
 		</div>
 		<!-- /.navbar-collapse -->	
 	</nav>

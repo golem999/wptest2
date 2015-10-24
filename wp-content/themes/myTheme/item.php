@@ -9,8 +9,9 @@ $loop = new WP_Query( $mypost );
 	<h3> <strong><?php the_title(); ?></strong>
 	</h3><!--
 	<img src="img/phone1.jpg" width="200" alt="">  -->
-    <?php the_post_thumbnail( array( 200, 250 ) ); ?>
-
+    <div class="item_thumbnail">
+        <?php the_post_thumbnail( array( 200, 250 ) ); ?>
+    </div>
 	<?php  the_content();  ?>
 	<div class="item_footer">
 		<span class="price glyphicon glyphicon-usd text-right" aria-label="left Align"><?php echo esc_html( get_post_meta( get_the_ID(), 'phone_price', true ) ); ?></span>

@@ -38,6 +38,29 @@ $('.buy').click(pageBuy);
 
 function buySingle(e) {
     if(  e.target.className.search('disabled') >= 0)  return;
+    if( !$('#user').text() ) {
+        loginShow();
+
+        toastr["info"]("Please, log in")
+        toastr.options = {
+          "closeButton": false,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "10000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        }
+        return;
+    }
     block(e);
     e.target.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
 
@@ -53,7 +76,31 @@ function buySingle(e) {
     });
 }
 function pageBuy (e){
-    if(  e.target.className.search('disabled') >= 0)  return;
+    if(  e.target.className.search('disabled') >= 0)  return; 
+    if( !$('#user').text() ) {
+        loginShow();
+
+        toastr["info"]("Please, log in")
+        toastr.options = {
+          "closeButton": false,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "10000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        }
+        return;
+    };
+
     block(e);
     e.target.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
 

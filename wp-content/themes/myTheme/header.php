@@ -9,8 +9,14 @@
 	<link rel="stylesheet" href='<?php echo get_template_directory_uri() . "/style.css"; ?>'>
 	<link rel="stylesheet" href='<?php echo get_template_directory_uri() . "/libs/font-awesome/css/font-awesome.min.css"; ?>'>
 	<link rel="stylesheet" href='<?php echo get_template_directory_uri() . "/libs/animate.css"; ?>'>
+	<link rel="stylesheet" href='<?php echo get_template_directory_uri() . "/libs/toastr/toastr.css"; ?>'>
 
 <body>
 
 
 <?php get_template_part('navbar'); ?>
+
+<?php get_template_part('login-form'); ?>
+
+
+

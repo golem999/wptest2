@@ -62,6 +62,7 @@ button i.fa-spin {
     color: #cc0000;
 }
 .item_close i {
+    cursor: pointer;
     font-size: 30px;
     line-height: 102px;
 }

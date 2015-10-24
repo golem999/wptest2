@@ -9,6 +9,7 @@
 
 // Hooking up our function to theme setup
 add_action( 'init', 'create_tags' );
+add_action( 'init', 'create_taxonomy' );
 //
 //add_action( 'add_meta_boxes', 'zvs_create_meta' );
 //add_action( 'save_post', 'zvs_save', 10, 2 );
@@ -45,6 +46,10 @@ function create_tags(){
         )
     );
 };
+
+function create_taxonomy(){
+    register_taxonomy( 'os', 'phone', array( 'hierarchical' => true, 'label' => 'OS', 'query_var' => true, 'rewrite' => true ) );
+}
 
 add_action( 'admin_init', 'zvs_create_meta' );
 

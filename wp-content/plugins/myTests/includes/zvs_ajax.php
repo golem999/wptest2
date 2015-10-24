@@ -17,11 +17,13 @@ function zvs_func(){
 
 function item_was_added($post_id){
 
-    $user = wp_get_current_user();
+    if(is_user_logged_in()) {
+        $user = wp_get_current_user();
 
-    $values = get_user_meta($user->ID, 'wanted');
-    foreach($values as $value){
-        if($value==$post_id) return true;
+        $values = get_user_meta($user->ID, 'wanted');
+        foreach ($values as $value) {
+            if ($value == $post_id) return true;
+        }
     }
     return false;
 }

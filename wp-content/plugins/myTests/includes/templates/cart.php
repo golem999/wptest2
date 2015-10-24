@@ -1,5 +1,5 @@
 
-<?php get_header(); ?>
+<?php get_header();?>
 
 <?php  $user = wp_get_current_user(); ?>
 
